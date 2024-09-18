@@ -1,0 +1,9 @@
+- name: Google Homepage
+  url: https://www.google.com
+  method: GET
+- name: example POST request
+  url: https://httpbin.org/post
+  method: POST
+  headers:
+    content-type: application/json
+  body: '{"key": "value"}'
