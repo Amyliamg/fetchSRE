@@ -1,7 +1,7 @@
 - headers:
     user-agent: fetch-synthetic-monitor
   method: GET
-  name: fetch index page
+  name: fetch.com index page
   url: https://fetch.com/
 - headers:
     user-agent: fetch-synthetic-monitor
