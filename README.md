@@ -11,7 +11,19 @@ The code is divided into three parts:
 The code has been separated for different classes and it is align with the idea of aglie methologists where we could fix the code logic in different segment if one of those three domain has an issue
 > **Others:** add error handlers and unit tests for debugging and checking the health of the project.
 
-## How to run
+# How to run
+
+## Step1. Check Python Installation
+If you haven't installed Python yet, follow these steps:
+1. **Download Python:**
+   - Visit [Python official website](https://www.python.org/downloads) and download the appropriate version for your operating system
+2. **Verify Installation:**
+   - Open your terminal or command prompt
+   - Run the following command to check the Python version:
+     `python --version`
+   - If a version number is returned, then Python is successfully installed on your device!
+
+## Step2. Clone the Project and Install All Dependencies
 1. Clone the project from the repository to your local device by copying the link below:
 `https://github.com/Amyliamg/fetchSRE.git`
 2. Install all the required dependencies
