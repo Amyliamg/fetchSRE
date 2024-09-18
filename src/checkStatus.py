@@ -30,7 +30,7 @@ class checkStatus:
     def print_logs(self):
         for domain in self.storage.keys():
             availability = self.calculate_avail(domain)
-            print(f"{domain} has {availability}% availability.")
+            print(f"{domain} has {availability}% availability")
  
 
     # Call the api and see the performance
