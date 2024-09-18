@@ -1,29 +1,28 @@
 # fetchSRE
-This project creates a system to regularly check the status of given URLs.
+This project creates a system to regularly check the status of given URLs
 
 ## Basic Logic
 The code is divided into three parts:
 
-1) Reading information from the given YAML file and storing it as instances of endpoints
-2) Checking the health of the given URLs and recording the results in the checkStatus package
-3) Calculating the total number of UP and DOWN endpoints after all the API calls in one term and then printing them out in the format required in the PDF
+1. Read Information: Parsing the provided YAML file and creating endpoint instances.
+2. Health Checks: Monitoring the health of the URLs and recording the results in the checkStatus package.
+3. Result Calculation: Aggregating the number of UP and DOWN endpoints after all API calls within a term, then printing them in the format specified in the PDF.
 
-The code has been separated for different classes and it is align with the idea of aglie methologists where we could fix the code logic in different segment if one of those three domain has an issue
+The code is organized into different classes, following Agile methodologies. This approach allows for isolated fixes in different segments if issues arise in any of the three components.
 > **Others:** add error handlers and unit tests for debugging and checking the health of the project.
 
-# How to run
+## How to run
 
-## Step1. Check Python Installation
-If you haven't installed Python yet, follow these steps:
+### Step1. Check Python Installation
+If Python is not yet installed, follow these steps:
 1. **Download Python:**
    - Visit [Python official website](https://www.python.org/downloads) and download the appropriate version for your operating system
 2. **Verify Installation:**
-   - Open your terminal or command prompt
-   - Run the following command to check the Python version:
+   - Open terminal or command prompt and run the following command to check the Python version:
      `python --version`
    - If a version number is returned, then Python is successfully installed on your device!
 
-## Step2. Clone the Project and Install All Dependencies
+### Step2. Clone the Project and Install All Dependencies
 1. Clone the project from the repository to your local device by copying the link below:
 `https://github.com/Amyliamg/fetchSRE.git`
 2. Install all the required dependencies
@@ -36,11 +35,11 @@ If you haven't installed Python yet, follow these steps:
 > **Note:** The code will continue to run. To stop it, manually interrupt the process with Ctrl + C.
 
 ## How to run other yml files?
-If you want to use different YAML files:
+To use different YAML files:
 
 1. Place the YAML file in the src/data folder and ensure it ends with ".yml".
 2. The YAML file should follow the YAML format rules. Incorrect formatting may cause failures in reading the file.
-3. Change Line 52 in main.py file with  app = Main('Your YamlFileName.yml', 15). Then it will be running!
+3. Change Line 52 in main.py file with `app = Main('Your YamlFileName.yml', 15)`  Then it will be running!
 
 ## Assumptions:
 This code makes the following assumptions to complete the tasks:
