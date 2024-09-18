@@ -1,3 +1,4 @@
+# Endpoint class for easy mapping
 class Endpoint:
     def __init__(self, name, url, method='GET', headers={}, body=None):
         self.url = url
